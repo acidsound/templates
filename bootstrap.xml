@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="bootstrap">
+  <template name="modal" value="&lt;!-- Modal --&gt;&#10;&lt;div id=&quot;$MODAL$&quot; class=&quot;modal hide fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;$MODAL$Label&quot; aria-hidden=&quot;true&quot;&gt;&#10;  &lt;div class=&quot;modal-header&quot;&gt;&#10;    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt;&#10;    &lt;h3 id=&quot;$MODAL$Label&quot;&gt;$HEADER$&lt;/h3&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;modal-body&quot;&gt;&#10;    $BODY$&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;modal-footer&quot;&gt;&#10;    &lt;button class=&quot;btn&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;Close&lt;/button&gt;&#10;    &lt;button class=&quot;btn btn-primary&quot;&gt;Save&lt;/button&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Bootstrap Modal" toReformat="false" toShortenFQNames="true">
+    <variable name="MODAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="tpl" value="&lt;template name=&quot;hero&quot;&gt;&#10;  $BODY&#10;&lt;/template&gt;" description="template for meteor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+

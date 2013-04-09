@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Meteor">
+  <template name="NavBasic" value="&lt;div class=&quot;navbar&quot;&gt;&#10;  &lt;div class=&quot;navbar-inner&quot;&gt;&#10;    &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;$Title$&lt;/a&gt;&#10;    &lt;ul class=&quot;nav&quot;&gt;&#10;      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$LINK1$&lt;/a&gt;&lt;/li&gt;&#10;      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$LINK2$&lt;/a&gt;&lt;/li&gt;&#10;      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$LINK3$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Navigation Basic" toReformat="false" toShortenFQNames="true">
+    <variable name="Title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LINK1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LINK2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LINK3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
