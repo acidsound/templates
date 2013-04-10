@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Meteor">
-  <template name="NavBasic" value="&lt;div class=&quot;navbar&quot;&gt;&#10;  &lt;div class=&quot;navbar-inner&quot;&gt;&#10;    &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;$Title$&lt;/a&gt;&#10;    &lt;ul class=&quot;nav&quot;&gt;&#10;      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$LINK1$&lt;/a&gt;&lt;/li&gt;&#10;      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$LINK2$&lt;/a&gt;&lt;/li&gt;&#10;      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$LINK3$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Navigation Basic" toReformat="false" toShortenFQNames="true">
+  <template name="navBasic" value="&lt;div class=&quot;navbar&quot;&gt;&#10;  &lt;div class=&quot;navbar-inner&quot;&gt;&#10;    &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;$Title$&lt;/a&gt;&#10;    &lt;ul class=&quot;nav&quot;&gt;&#10;      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$LINK1$&lt;/a&gt;&lt;/li&gt;&#10;      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$LINK2$&lt;/a&gt;&lt;/li&gt;&#10;      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$LINK3$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Navigation Basic" toReformat="false" toShortenFQNames="true">
     <variable name="Title" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="LINK1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="LINK2" expression="" defaultValue="" alwaysStopAt="true" />
@@ -16,6 +16,171 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="tpl" value="&lt;template name=&quot;$NAME$&quot;&gt;&#10;  $BODY$&#10;&lt;/template&gt;" description="template for meteor" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="if" value="{{#if $EXP$}}&#10;  $TRUE$&#10;{{else}}&#10;  $FALSE$&#10;{{/if}}" description="if statement" toReformat="false" toShortenFQNames="true">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TRUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FALSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="unless" value="{{#unless $EXP$}}&#10;  $TRUE$&#10;{{else}}&#10;  $FALSE$&#10;{{/unless}}" description="unless statement" toReformat="false" toShortenFQNames="true">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TRUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FALSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="each" value="{{#each $EXP$}}&#10;  $BODY%&#10;{{/each}}" description="each statement" toReformat="false" toShortenFQNames="true">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="colj" value="$COLS$ = new Meteor.Collection &quot;$COLNAME$&quot;" description="collection" toReformat="false" toShortenFQNames="true">
+    <variable name="COLS" expression="capitalize(COLS)" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLNAME" expression="decapitalize(COLS)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="true" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="colc" value="var $COLS$ = new Meteor.Collection(&quot;$COLNAME$&quot;);" description="collection js" toReformat="false" toShortenFQNames="true">
+    <variable name="COLS" expression="capitalize(COLS)" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLNAME" expression="decapitalize(COLS)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="metc" value="Meteor.methods&#10;  $METHOD$: ($ARG$)-&gt;&#10;    $DOSOME$&#10;    return $result$" description="method coffescript" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DOSOME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="true" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="metj" value="Meteor.methods({&#10;  $foo$: function ($arg$) {&#10;    $doStuff$&#10;    return $result$;&#10;  }&#10;});" description="method javascript" toReformat="false" toShortenFQNames="true">
+    <variable name="foo" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arg" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="doStuff" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
       <option name="DART" value="false" />

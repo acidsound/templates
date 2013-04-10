@@ -21,7 +21,72 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="tpl" value="&lt;template name=&quot;hero&quot;&gt;&#10;  $BODY&#10;&lt;/template&gt;" description="template for meteor" toReformat="false" toShortenFQNames="true">
+  <template name="tabs" value="&lt;ul class=&quot;nav nav-tabs&quot;&gt;&#10;  &lt;li class=&quot;active&quot;&gt;&#10;    &lt;a href=&quot;#&quot;&gt;$ACTIVATED$&lt;/a&gt;&#10;  &lt;/li&gt;&#10;  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$SEC$&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$THIRD$&lt;/a&gt;&lt;/li&gt;&#10;&lt;/ul&gt;" description="basic tabs" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTIVATED" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEC" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="THIRD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="dropdown" value="&lt;li class=&quot;dropdown&quot;&gt;&#10;  &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&#10;      $DROPDOWN$&#10;    &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&#10;  &lt;/a&gt;&#10;  &lt;ul class=&quot;dropdown-menu&quot;&gt;&#10;    &lt;!-- links --&gt;&#10;    &lt;li&gt;$LINK$&lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/li&gt;" description="dropdown" toReformat="false" toShortenFQNames="true">
+    <variable name="DROPDOWN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LINK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="navbar" value="&lt;div class=&quot;navbar&quot;&gt;&#10;  &lt;div class=&quot;navbar-inner&quot;&gt;&#10;    &lt;div class=&quot;container&quot;&gt;&#10;      &lt;!-- .btn-navbar is used as the toggle for collapsed navbar content --&gt;&#10;      &lt;a class=&quot;btn btn-navbar&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.nav-collapse&quot;&gt;&#10;        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;      &lt;/a&gt;&#10;      &lt;!-- Be sure to leave the brand out there if you want it shown --&gt;&#10;      &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;$PROJECT$&lt;/a&gt;&#10; &#10;      &lt;!-- Everything you want hidden at 940px or less, place within here --&gt;&#10;      &lt;div class=&quot;nav-collapse collapse&quot;&gt;&#10;        &lt;!-- .nav, .navbar-search, .navbar-form, etc --&gt;&#10;        $NAVS$&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Responsive Navigation Bar" toReformat="false" toShortenFQNames="true">
+    <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAVS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="navmenu" value="&lt;ul class=&quot;nav nav-list&quot;&gt;&#10;  &lt;li class=&quot;nav-header&quot;&gt;$HEADER$&lt;/li&gt;&#10;  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$HOME$&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$ITEM1$&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$ITEM2$&lt;/a&gt;&lt;/li&gt;&#10;&lt;/ul&gt;" description="Navigator Menu" toReformat="false" toShortenFQNames="true">
+    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HOME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
