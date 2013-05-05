@@ -42,26 +42,6 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="dropdown" value="&lt;li class=&quot;dropdown&quot;&gt;&#10;  &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&#10;      $DROPDOWN$&#10;    &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&#10;  &lt;/a&gt;&#10;  &lt;ul class=&quot;dropdown-menu&quot;&gt;&#10;    &lt;!-- links --&gt;&#10;    &lt;li&gt;$LINK$&lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/li&gt;" description="dropdown" toReformat="false" toShortenFQNames="true">
-    <variable name="DROPDOWN" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="LINK" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="true" />
-      <option name="HTML" value="true" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="DART" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
   <template name="navbar" value="&lt;div class=&quot;navbar&quot;&gt;&#10;  &lt;div class=&quot;navbar-inner&quot;&gt;&#10;    &lt;div class=&quot;container&quot;&gt;&#10;      &lt;!-- .btn-navbar is used as the toggle for collapsed navbar content --&gt;&#10;      &lt;a class=&quot;btn btn-navbar&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.nav-collapse&quot;&gt;&#10;        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;      &lt;/a&gt;&#10;      &lt;!-- Be sure to leave the brand out there if you want it shown --&gt;&#10;      &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;$PROJECT$&lt;/a&gt;&#10; &#10;      &lt;!-- Everything you want hidden at 940px or less, place within here --&gt;&#10;      &lt;div class=&quot;nav-collapse collapse&quot;&gt;&#10;        &lt;!-- .nav, .navbar-search, .navbar-form, etc --&gt;&#10;        $NAVS$&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Responsive Navigation Bar" toReformat="false" toShortenFQNames="true">
     <variable name="PROJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAVS" expression="" defaultValue="" alwaysStopAt="true" />
@@ -82,11 +62,50 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="navmenu" value="&lt;ul class=&quot;nav nav-list&quot;&gt;&#10;  &lt;li class=&quot;nav-header&quot;&gt;$HEADER$&lt;/li&gt;&#10;  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$HOME$&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$ITEM1$&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$ITEM2$&lt;/a&gt;&lt;/li&gt;&#10;&lt;/ul&gt;" description="Navigator Menu" toReformat="false" toShortenFQNames="true">
-    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="HOME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ITEM1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ITEM2" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="navmenu" value="&lt;ul class=&quot;nav menu&quot;&gt;&#10;  &lt;li class=&quot;divider-vertical&quot;&gt;&lt;/li&gt;&#10;  &lt;li class=&quot;active&quot;&gt;$MENU1$&lt;/li&gt;&#10;  &lt;li&gt;$MENU2$&lt;/li&gt;&#10;  &lt;li&gt;$MENU3$&lt;/li&gt;&#10;&lt;/ul&gt;&#10;" description="Navigator Menu" toReformat="false" toShortenFQNames="true">
+    <variable name="MENU1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MENU2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MENU3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="dropdown" value="&lt;div class=&quot;btn-group&quot;&gt;&#10;  &lt;button class=&quot;btn&quot;&gt;$DROPDOWN$&lt;/button&gt;&#10;  &lt;button class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;&#10;  &lt;ul class=&quot;dropdown-menu&quot;&gt;&#10;    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$Action$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$AnotherAction$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$SeparatedLink$&lt;/a&gt;&lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/div&gt;&lt;!-- /btn-group --&gt;&#10;" description="dropdown button" toReformat="false" toShortenFQNames="true">
+    <variable name="DROPDOWN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Action" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="AnotherAction" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SeparatedLink" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="media" value="&lt;div class=&quot;media&quot;&gt;&#10;  &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&#10;    &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js/64x64&quot; alt=&quot;64x64&quot; style=&quot;width: 64px; height: 64px;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACpElEQVR4Xu2Y3YsxYRjG7ynKVwjlgEJSFEWScuwfV5JCFMWJnCCEECLqffd66pnGrnZnNKuWe2oPdmae557ruj9+Y5T1ev2P3vhQ2ACuAG4BngFvPAOJhyBTgCnAFGAKMAXe2AHGIGOQMcgYZAy+MQT4xxBjkDHIGGQMMgaNYvB0OtH5fBbLHA4HWa3Wu1tcLhc6Ho/k8XiMhhD3PyOOYQrM53PqdruqIIjP5/Pkcrm+iOz1ejSbzahcLhs24FlxDBmwXC6p0+lQKpWiUChEyPB0OhUZ9nq9NyInkwn1+31xzqgBz4qDZzNkQK1WI5/PR8lk8tuMbjYbajabFIvFaDQa3RgAYxaLBaXTadE6yDRMhKk2m03sa0YcvSWn2wD0Y7VapUwmI/p/tVoJAeFw+Cb7qAoIiEajojJghLYC5PVgMEjxeFy9NxKJqH1vRhzTDZBZhWj8oQU+XqKEEdlslgKBgIjZaDTIYrFQLpcjueZzC8gSd7vdpCgKFQoF9XnNjKPHBN0VIB8MGde2AATb7XZR0rLvIQwmIdu73Y78fj/hHDIuDzkgtebhmtlxfjJBtwEQU6lUKJFIkCxXbA4huIaMy36WQa/XK2232y8G7Pd7qtfrAqEwD2vlYWacn8QbHoKDwUCIlNiDkFarJfpda4oMfK8FILDdbgvxqCbMCEkVuc6MOHrEGzYAD4+Mo+/lgfKWE/1z0HsGDIdDGo/HVCqVRJvI/4vFokoBM+L8igFyU2T+cDiQ0+m8+wKkLWfcp31HgCnAnUQexOIe7Tkz4vyqAXo3/wv36R6Cf0HMI8/IBvAXIf4ixF+E+IvQI9PzVdYwBZgCTAGmAFPgVSb6IzqYAkwBpgBTgCnwyPR8lTVMAaYAU4ApwBR4lYn+iA6mwLtT4D/NCauf7CLDpgAAAABJRU5ErkJggg==&quot;&gt;&#10;  &lt;/a&gt;&#10;  &lt;div class=&quot;media-body&quot;&gt;&#10;    &lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;&#10;    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;media&quot;&gt;&#10;  &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&#10;    &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js/64x64&quot; alt=&quot;64x64&quot; style=&quot;width: 64px; height: 64px;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACpElEQVR4Xu2Y3YsxYRjG7ynKVwjlgEJSFEWScuwfV5JCFMWJnCCEECLqffd66pnGrnZnNKuWe2oPdmae557ruj9+Y5T1ev2P3vhQ2ACuAG4BngFvPAOJhyBTgCnAFGAKMAXe2AHGIGOQMcgYZAy+MQT4xxBjkDHIGGQMMgaNYvB0OtH5fBbLHA4HWa3Wu1tcLhc6Ho/k8XiMhhD3PyOOYQrM53PqdruqIIjP5/Pkcrm+iOz1ejSbzahcLhs24FlxDBmwXC6p0+lQKpWiUChEyPB0OhUZ9nq9NyInkwn1+31xzqgBz4qDZzNkQK1WI5/PR8lk8tuMbjYbajabFIvFaDQa3RgAYxaLBaXTadE6yDRMhKk2m03sa0YcvSWn2wD0Y7VapUwmI/p/tVoJAeFw+Cb7qAoIiEajojJghLYC5PVgMEjxeFy9NxKJqH1vRhzTDZBZhWj8oQU+XqKEEdlslgKBgIjZaDTIYrFQLpcjueZzC8gSd7vdpCgKFQoF9XnNjKPHBN0VIB8MGde2AATb7XZR0rLvIQwmIdu73Y78fj/hHDIuDzkgtebhmtlxfjJBtwEQU6lUKJFIkCxXbA4huIaMy36WQa/XK2232y8G7Pd7qtfrAqEwD2vlYWacn8QbHoKDwUCIlNiDkFarJfpda4oMfK8FILDdbgvxqCbMCEkVuc6MOHrEGzYAD4+Mo+/lgfKWE/1z0HsGDIdDGo/HVCqVRJvI/4vFokoBM+L8igFyU2T+cDiQ0+m8+wKkLWfcp31HgCnAnUQexOIe7Tkz4vyqAXo3/wv36R6Cf0HMI8/IBvAXIf4ixF+E+IvQI9PzVdYwBZgCTAGmAFPgVSb6IzqYAkwBpgBTgCnwyPR8lTVMAaYAU4ApwBR4lYn+iA6mwLtT4D/NCauf7CLDpgAAAABJRU5ErkJggg==&quot;&gt;&#10;  &lt;/a&gt;&#10;  &lt;div class=&quot;media-body&quot;&gt;&#10;    &lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;&#10;    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.&#10;    &lt;div class=&quot;media&quot;&gt;&#10;      &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&#10;        &lt;img class=&quot;media-object&quot; data-src=&quot;holder.js/64x64&quot; alt=&quot;64x64&quot; style=&quot;width: 64px; height: 64px;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACpElEQVR4Xu2Y3YsxYRjG7ynKVwjlgEJSFEWScuwfV5JCFMWJnCCEECLqffd66pnGrnZnNKuWe2oPdmae557ruj9+Y5T1ev2P3vhQ2ACuAG4BngFvPAOJhyBTgCnAFGAKMAXe2AHGIGOQMcgYZAy+MQT4xxBjkDHIGGQMMgaNYvB0OtH5fBbLHA4HWa3Wu1tcLhc6Ho/k8XiMhhD3PyOOYQrM53PqdruqIIjP5/Pkcrm+iOz1ejSbzahcLhs24FlxDBmwXC6p0+lQKpWiUChEyPB0OhUZ9nq9NyInkwn1+31xzqgBz4qDZzNkQK1WI5/PR8lk8tuMbjYbajabFIvFaDQa3RgAYxaLBaXTadE6yDRMhKk2m03sa0YcvSWn2wD0Y7VapUwmI/p/tVoJAeFw+Cb7qAoIiEajojJghLYC5PVgMEjxeFy9NxKJqH1vRhzTDZBZhWj8oQU+XqKEEdlslgKBgIjZaDTIYrFQLpcjueZzC8gSd7vdpCgKFQoF9XnNjKPHBN0VIB8MGde2AATb7XZR0rLvIQwmIdu73Y78fj/hHDIuDzkgtebhmtlxfjJBtwEQU6lUKJFIkCxXbA4huIaMy36WQa/XK2232y8G7Pd7qtfrAqEwD2vlYWacn8QbHoKDwUCIlNiDkFarJfpda4oMfK8FILDdbgvxqCbMCEkVuc6MOHrEGzYAD4+Mo+/lgfKWE/1z0HsGDIdDGo/HVCqVRJvI/4vFokoBM+L8igFyU2T+cDiQ0+m8+wKkLWfcp31HgCnAnUQexOIe7Tkz4vyqAXo3/wv36R6Cf0HMI8/IBvAXIf4ixF+E+IvQI9PzVdYwBZgCTAGmAFPgVSb6IzqYAkwBpgBTgCnwyPR8lTVMAaYAU4ApwBR4lYn+iA6mwLtT4D/NCauf7CLDpgAAAABJRU5ErkJggg==&quot;&gt;&#10;      &lt;/a&gt;&#10;      &lt;div class=&quot;media-body&quot;&gt;&#10;        &lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;&#10;        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;" description="media objects" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />

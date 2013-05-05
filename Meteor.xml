@@ -84,8 +84,9 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="each" value="{{#each $EXP$}}&#10;  $BODY%&#10;{{/each}}" description="each statement" toReformat="false" toShortenFQNames="true">
+  <template name="each" value="{{#each $EXP$}}&#10;  $BODY$&#10;{{/each}}" description="each statement" toReformat="false" toShortenFQNames="true">
     <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
