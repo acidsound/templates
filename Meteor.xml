@@ -16,9 +16,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -36,9 +38,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -57,9 +61,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -78,9 +84,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -98,13 +106,15 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="colj" value="$COLS$ = new Meteor.Collection &quot;$COLNAME$&quot;" description="collection" toReformat="false" toShortenFQNames="true">
+  <template name="colj" value="@$COLS$ = new Meteor.Collection &quot;$COLNAME$&quot;" description="collection" toReformat="false" toShortenFQNames="true">
     <variable name="COLS" expression="capitalize(COLS)" defaultValue="" alwaysStopAt="true" />
     <variable name="COLNAME" expression="decapitalize(COLS)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -118,9 +128,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="true" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -138,9 +150,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -160,9 +174,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="true" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -182,9 +198,56 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
+      <option name="JADE" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hh" value="Handlebars.registerHelper('$HELPERNAME$', function ($OBJ$) {&#10;  return $RETURN$;&#10;});&#10;" description="handlebars helper" toReformat="false" toShortenFQNames="true">
+    <variable name="HELPERNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="false" />
       <option name="DART" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JADE" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hbhp" value="Handlebars.registerHelper '$HELPER$', ($ARGS$)-&gt;&#10;  $ARGS$" description="Handlebars registerHelper" toReformat="false" toShortenFQNames="true">
+    <variable name="HELPER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
+      <option name="CoffeeScript" value="true" />
+      <option name="HAML" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>

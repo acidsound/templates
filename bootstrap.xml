@@ -15,9 +15,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -36,9 +38,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -56,9 +60,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -77,9 +83,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -99,9 +107,11 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
-      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -117,9 +127,36 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="HAML" value="false" />
+      <option name="JADE" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="navbar3" value="&lt;!-- Fixed navbar --&gt;&#10;&lt;div class=&quot;navbar navbar-default navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;&#10;  &lt;div class=&quot;container&quot;&gt;&#10;    &lt;div class=&quot;navbar-header&quot;&gt;&#10;      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;&#10;        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;&#10;        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;      &lt;/button&gt;&#10;      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;$PROJECT_NAME$&lt;/a&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;navbar-collapse collapse&quot;&gt;&#10;      &lt;ul class=&quot;nav navbar-nav&quot;&gt;&#10;        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$ACTIVE$&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;$INACTIVE1$&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;$INACTIVE2$&lt;/a&gt;&lt;/li&gt;&#10;      &lt;/ul&gt;&#10;      &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;&#10;        &lt;li class=&quot;input&quot;&gt;$RIGHT_TOP$&lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/div&gt;&lt;!--/.nav-collapse --&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Bootstrap3 Responsive Fixed Top" toReformat="false" toShortenFQNames="true">
+    <variable name="PROJECT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTIVE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INACTIVE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INACTIVE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RIGHT_TOP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="DART" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JADE" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
